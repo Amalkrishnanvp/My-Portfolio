@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.nav-border:hover {
+  border: 1px solid white;
+  border-radius: 2px;
+}
+.toggle-button-container {
+  padding: 5px 11px;
+  border-radius: 50%;
+}
+.toggle-list {
+  display: flex;
+}
+.pad-5 {
+  padding: 5px;
+}
+nav {
+  background-color: #001d3d;
+}
+.section1 {
+  background-color: #fff;
+}
+.toggle-button-container:hover {
+  background-color: rgb(108, 108, 108);
+}
