@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 * {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Noto serif";
+  font-size: 1rem;
 }
 .nav-border:hover {
   border: 1px solid white;
@@ -27,4 +28,19 @@ nav {
 }
 .toggle-button-container:hover {
   background-color: rgb(108, 108, 108);
+}
+.section2 {
+  background-color: #003566;
+}
+#cursor {
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
