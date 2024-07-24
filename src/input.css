@@ -7,7 +7,7 @@
   font-size: 1rem;
 }
 .nav-border:hover {
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 2px;
 }
 .toggle-button-container {
@@ -26,14 +26,17 @@ nav {
 .section1 {
   background-color: #fff;
 }
-.toggle-button-container:hover {
-  background-color: rgb(108, 108, 108);
-}
 .section2 {
   background-color: #003566;
 }
 #cursor {
   animation: blink .7s infinite;
+}
+.about-heading {
+  color: #f8f9fa;
+}
+.my-name {
+  color: #fff;
 }
 
 @keyframes blink {

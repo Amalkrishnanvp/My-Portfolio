@@ -558,10 +558,6 @@ video {
   position: static;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -570,24 +566,16 @@ video {
   margin-left: 0.25rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mr-12 {
   margin-right: 3rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .block {
@@ -600,10 +588,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .w-64 {
@@ -662,15 +646,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -680,20 +655,29 @@ video {
   padding: 2.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pb-6 {
   padding-bottom: 1.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-16 {
@@ -704,20 +688,16 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-2\.5 {
-  padding-top: 0.625rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-center {
@@ -729,14 +709,14 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-base {
@@ -746,6 +726,11 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -768,7 +753,7 @@ video {
 }
 
 .nav-border:hover {
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 2px;
 }
 
@@ -793,16 +778,20 @@ nav {
   background-color: #fff;
 }
 
-.toggle-button-container:hover {
-  background-color: rgb(108, 108, 108);
-}
-
 .section2 {
   background-color: #003566;
 }
 
 #cursor {
   animation: blink .7s infinite;
+}
+
+.about-heading {
+  color: #f8f9fa;
+}
+
+.my-name {
+  color: #fff;
 }
 
 @keyframes blink {
@@ -830,6 +819,10 @@ nav {
     margin: 0px;
   }
 
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:mr-20 {
     margin-right: 5rem;
   }
@@ -848,6 +841,10 @@ nav {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:shrink-0 {
@@ -874,8 +871,16 @@ nav {
     padding: 0px;
   }
 
-  .md\:pt-0 {
-    padding-top: 0px;
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:pl-5 {
+    padding-left: 1.25rem;
   }
 
   .md\:pt-6 {
@@ -884,6 +889,21 @@ nav {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -898,15 +918,5 @@ nav {
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 }
