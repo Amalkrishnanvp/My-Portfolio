@@ -574,8 +574,8 @@ video {
   margin-right: 3rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -588,10 +588,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-96 {
@@ -734,6 +730,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -845,6 +846,10 @@ nav {
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:w-64 {
+    width: 16rem;
   }
 
   .md\:shrink-0 {
