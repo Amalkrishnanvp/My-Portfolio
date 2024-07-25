@@ -638,15 +638,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-10 {
   padding: 2.5rem;
 }
@@ -728,11 +719,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -836,6 +822,10 @@ nav {
     margin-top: 0px;
   }
 
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -846,10 +836,6 @@ nav {
 
   .md\:h-96 {
     height: 24rem;
-  }
-
-  .md\:w-64 {
-    width: 16rem;
   }
 
   .md\:shrink-0 {
