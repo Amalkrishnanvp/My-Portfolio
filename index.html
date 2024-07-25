@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+
+    <!-- CSS styles -->
     <link rel="stylesheet" href="public/style.css">
+
+    <!-- Font Awesome CDN  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-    <script>
-
-    </script>
 </head>
 
 <body>
-    <nav class="flex text-white justify-between pt-5 pb-6 px-6 md:p-10 items-start md:items-center">
+    <!-- Navbar  -->
+    <nav class="flex text-white justify-between pt-5 pb-6 px-6 md:p-10 items-start md:items-center sticky top-0">
         <h2 class="font-semibold text-3xl md:text-4xl my-name">Amal</h2>
         <ul
             class="text-lg navbar-list flex-col text-center flex-start gap-3 pt-16 items-center pb-4 mr-12 hidden md:flex md:flex-row md:gap-6 md:p-0 md:m-0">
@@ -47,17 +49,17 @@
         </div>
     </nav>
 
+    <!-- Hero Section  -->
     <section class="section1">
         <div>
             <div
                 class="hero-section flex flex-col-reverse justify-center items-center p-10 md:flex-row md:justify-around gap-8">
-                <div class="info md:mr-8">
-                    <!-- <h3 class="text-lg xl:text-2xl text-center md:text-left">Hi, i am Amal</h3> -->
-                    <p class="text-lg xl:text-2xl text-center pt-1 md:mt-0 md:text-left font-semibold">FULL STACK
+                <div class="info md:mr-8 rounded-md p-4 md:p-8">
+                    <p class="text-sm xl:text-2xl text-center pt-1 md:mt-0 md:text-left font-semibold">FULL STACK
                         DEVELOPER <i class="fa-solid fa-code text-lg xl:text-2xl ml-1"></i></p>
-                    <h1 class="font-bold text-3xl lg:text-5xl text-center pt-1 sm:mt-0 sm:text-left">
+                    <h1 class="font-bold text-2xl lg:text-5xl text-center pt-1 sm:mt-0 sm:text-left">
                         Amal Krishnan
-                        v.p</h1>
+                        v p</h1>
                 </div>
                 <div class="picture">
                     <img src="https://media.licdn.com/dms/image/D4E03AQGR5QMxbCDppA/profile-displayphoto-shrink_800_800/0/1721888498809?e=1727308800&v=beta&t=s5FcZXpjQLASUmLBPUwYUYEtiDIV8v2-rI1VJMFRI74"
@@ -67,10 +69,13 @@
         </div>
     </section>
 
+    <!-- About section  -->
     <section class="section2">
         <div class="about-section text-white pl-8 pr-8 pt-6 md:p-8">
-            <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5">About me<i
-                    class="fa-solid fa-arrow-right text-2xl md:text-4xl ml-3"></i></h2>
+            <div>
+                <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5">About me<i
+                        class="fa-solid fa-user text-2xl md:text-4xl ml-3"></i></h2>
+            </div>
             <div class="flex flex-col pt-4 md:flex-row md:pt-6 pb-6 justify-around">
                 <div class="profile-img md:shrink-0 md:mr-20">
                     <img src="https://media.licdn.com/dms/image/D5603AQF8yAYO2B5_Bw/profile-displayphoto-shrink_800_800/0/1721052494081?e=1727308800&v=beta&t=82rldmcPQvW1TWuWPI1BME7XDyKKh-q3MTyOcbRze5M"
@@ -89,11 +94,9 @@
         </div>
     </section>
 
+    <!-- Website scripts  -->
     <script src=" app.js">
     </script>
 </body>
 
 </html>
-
-
-<!-- <img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small_2x/profile-icon-design-free-vector.jpg" -->

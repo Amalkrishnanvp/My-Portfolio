@@ -30,7 +30,7 @@ nav {
   background-color: #003566;
 }
 #cursor {
-  animation: blink .7s infinite;
+  animation: blink 0.7s infinite;
 }
 .about-heading {
   color: #f8f9fa;
@@ -38,9 +38,13 @@ nav {
 .my-name {
   color: #fff;
 }
+.info {
+  box-shadow: 0px 2px 15px 2px #8b8eaf;
+}
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
