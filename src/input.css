@@ -22,6 +22,7 @@
 }
 nav {
   background-color: #001d3d;
+  z-index: 999;
 }
 .section1 {
   background-color: #fff;
@@ -53,7 +54,6 @@ nav {
 .whole-section {
   background-color: #003566;
 }
-
 @keyframes blink {
   0%,
   100% {

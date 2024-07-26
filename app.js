@@ -1,9 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.querySelector(".toggle-button-container");
   const navbarList = document.querySelector(".navbar-list");
+  const navBar = document.querySelector("nav");
 
   toggleBtn.addEventListener("click", () => {
     navbarList.classList.toggle("toggle-list");
+    if (navbarList.classList.contains("toggle-list")) {
+      navBar.classList.add("h-screen");
+    } else {
+      navBar.classList.remove("h-screen");
+    }
   });
 
   function typeAnimation() {
