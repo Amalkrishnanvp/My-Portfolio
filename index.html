@@ -24,7 +24,7 @@
 
 <body>
     <!-- Navbar  -->
-    <nav class="flex text-white justify-between pt-5 pb-6 px-6 md:p-10 items-start md:items-center sticky top-0">
+    <nav class="flex text-white justify-between p-8 md:p-10 items-start md:items-center sticky top-0">
         <h2 class="font-semibold text-3xl md:text-4xl my-name">Amal</h2>
         <ul
             class="text-lg navbar-list flex-col text-center flex-start gap-3 pt-16 items-center pb-4 mr-12 hidden md:flex md:flex-row md:gap-6 md:p-0 md:m-0">
@@ -45,7 +45,7 @@
             </li>
         </ul>
         <div class="toggle-button-container block md:hidden">
-            <a href="#"><i class="fa-solid fa-bars toggle-btn text-xl md:text-2xl"></i></a>
+            <a href="#"><i class="fa-solid fa-bars toggle-btn text-2xl md:text-3xl"></i></a>
         </div>
     </nav>
 
@@ -55,9 +55,9 @@
             <div
                 class="hero-section flex flex-col-reverse justify-center items-center p-10 md:flex-row md:justify-around gap-8">
                 <div class="info md:mr-8 rounded-md p-4 md:p-8">
-                    <p class="text-sm xl:text-2xl text-center pt-1 md:mt-0 md:text-left font-semibold">FULL STACK
+                    <p class="text-lg xl:text-2xl text-center pt-1 md:mt-0 md:text-left font-semibold">FULL STACK
                         DEVELOPER <i class="fa-solid fa-code text-lg xl:text-2xl ml-1"></i></p>
-                    <h1 class="font-bold text-2xl lg:text-5xl text-center pt-1 sm:mt-0 sm:text-left">
+                    <h1 class="font-bold text-3xl lg:text-5xl text-center pt-1 sm:mt-0 sm:text-left">
                         Amal Krishnan
                         v p</h1>
                 </div>
@@ -69,30 +69,76 @@
         </div>
     </section>
 
-    <!-- About section  -->
-    <section class="section2">
-        <div class="about-section text-white pl-8 pr-8 pt-6 md:p-8">
-            <div>
-                <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5">About me<i
-                        class="fa-solid fa-user text-2xl md:text-4xl ml-3"></i></h2>
-            </div>
-            <div class="flex flex-col pt-4 md:flex-row md:pt-6 pb-6 justify-around">
-                <div class="profile-img md:shrink-0 md:mr-20">
-                    <img src="https://media.licdn.com/dms/image/D5603AQF8yAYO2B5_Bw/profile-displayphoto-shrink_800_800/0/1721052494081?e=1727308800&v=beta&t=82rldmcPQvW1TWuWPI1BME7XDyKKh-q3MTyOcbRze5M"
-                        class="rounded-full md:h-96 w-96">
+    <section class="whole-section">
+
+        <!-- About section  -->
+        <section class="section2">
+            <div class="about-section text-white pl-8 pr-8 pt-6 md:p-8 flex flex-col">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5">About Me<i
+                            class="fa-solid fa-user text-2xl md:text-4xl ml-3"></i></h2>
                 </div>
-                <div class="about max-w-2xl mt-8 md:mt-20">
-                    <h3 class="text-3xl md:text-5xl mb-8">I am a <span id="identity"
-                            class="text-3xl md:text-5xl"></span><span id="cursor"
-                            class="text-3xl md:text-5xl d-inline-block">|</span></h3>
-                    <p class="tex-3xl">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                        temporibus soluta provident obcaecati architecto expedita hic non eum eligendi excepturi? In
-                        dolorum velit eum sit nemo debitis aut magni ad? Lorem ipsum dolor sit, amet consectetur
-                        adipisicing elit. Temporibus, molestias.</p>
+                <div class="flex flex-col items-center justify-center pt-4 md:flex-row md:pt-6 pb-6 md:justify-around">
+                    <div class="profile-img md:shrink-0 md:mr-20">
+                        <img src="https://media.licdn.com/dms/image/D5603AQF8yAYO2B5_Bw/profile-displayphoto-shrink_800_800/0/1721052494081?e=1727308800&v=beta&t=82rldmcPQvW1TWuWPI1BME7XDyKKh-q3MTyOcbRze5M"
+                            class="rounded-full md:h-96 w-96">
+                    </div>
+                    <div class="about max-w-2xl mt-8 md:mt-0">
+                        <h3 class="text-3xl md:text-5xl mb-8">I am a <span id="identity"
+                                class="text-3xl md:text-5xl"></span><span id="cursor"
+                                class="text-3xl md:text-5xl d-inline-block">|</span></h3>
+                        <p class="tex-3xl">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                            temporibus soluta provident obcaecati architecto expedita hic non eum eligendi excepturi? In
+                            dolorum velit eum sit nemo debitis aut magni ad? Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Temporibus, molestias.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Skills section  -->
+        <section class="section3">
+            <div class="skills-section text-white pl-8 pr-8 pt-6 md:p-8 flex flex-col">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5 text-right"><i
+                            class="fa-solid fa-screwdriver-wrench text-2xl md:text-4xl mr-3"></i>My Skills</h2>
+                </div>
+                <div class="skill-icons pt-5 md:pt-7">
+                    <div class="row1 flex justify-center gap-5">
+                        <div
+                            class="box1 bg-white h-40 w-40 p-7 flex items-center justify-center rounded-xl shadow-property">
+                            <img src="icons/html.png">
+                        </div>
+                        <div class="box2  bg-white h-40 w-40 p-7 flex items-center justify-center rounded-xl shadow-property"">
+                        <img src=" icons/css.png">
+                        </div>
+                        <div class="box3  bg-white h-40 w-40 p-7 flex items-center justify-center rounded-xl shadow-property"">
+                        <img src=" icons/javascript.png">
+                        </div>
+                    </div>
+                    <div class="row2 flex justify-center gap-5 mt-6">
+                        <div class="box4  bg-white h-40 w-40 p-7 flex items-center justify-center rounded-xl shadow-property"">
+                        <img src=" icons/tailwind.svg">
+                        </div>
+                        <div class="box5  bg-white h-40 w-40 p-7 flex items-center justify-center rounded-xl shadow-property"">
+                        <img src=" icons/git.png">
+                        </div>
+                        <div class="box6  bg-white h-40 w-40 p-7 flex items-center justify-center rounded-xl shadow-property"">
+                        <img src=" icons/java.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </section>
+
+
+    <!-- Projects section  -->
+
+    <!-- Contact session -->
+
+    <!-- Footer session  -->
 
     <!-- Website scripts  -->
     <script src=" app.js">
