@@ -660,6 +660,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -761,6 +765,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -773,32 +781,24 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-0 {
-  padding-top: 0px;
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pb-8 {
   padding-bottom: 2rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
+.pb-9 {
+  padding-bottom: 2.25rem;
 }
 
 .text-center {
@@ -934,16 +934,8 @@ nav {
     height: 7rem;
   }
 
-  .sm\:h-40 {
-    height: 10rem;
-  }
-
   .sm\:w-28 {
     width: 7rem;
-  }
-
-  .sm\:w-40 {
-    width: 10rem;
   }
 
   .sm\:grid-cols-3 {
@@ -956,10 +948,6 @@ nav {
 
   .sm\:p-8 {
     padding: 2rem;
-  }
-
-  .sm\:p-7 {
-    padding: 1.75rem;
   }
 
   .sm\:text-left {
@@ -996,20 +984,12 @@ nav {
     display: none;
   }
 
-  .md\:h-40 {
-    height: 10rem;
-  }
-
-  .md\:h-96 {
-    height: 24rem;
-  }
-
   .md\:h-32 {
     height: 8rem;
   }
 
-  .md\:w-40 {
-    width: 10rem;
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:w-32 {
@@ -1044,32 +1024,16 @@ nav {
     padding: 2.5rem;
   }
 
-  .md\:p-7 {
-    padding: 1.75rem;
+  .md\:p-6 {
+    padding: 1.5rem;
   }
 
   .md\:p-8 {
     padding: 2rem;
   }
 
-  .md\:p-6 {
-    padding: 1.5rem;
-  }
-
   .md\:pl-5 {
     padding-left: 1.25rem;
-  }
-
-  .md\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
-  .md\:pt-7 {
-    padding-top: 1.75rem;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
   }
 
   .md\:pl-8 {
@@ -1080,8 +1044,20 @@ nav {
     padding-right: 2rem;
   }
 
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
   .md\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .md\:pt-7 {
+    padding-top: 1.75rem;
   }
 
   .md\:text-left {
