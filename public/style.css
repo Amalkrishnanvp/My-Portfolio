@@ -792,6 +792,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1030,6 +1034,10 @@ html {
 
   .md\:pt-7 {
     padding-top: 1.75rem;
+  }
+
+  .md\:pt-12 {
+    padding-top: 3rem;
   }
 
   .md\:text-left {
