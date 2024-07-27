@@ -23,31 +23,48 @@
 </head>
 
 <body>
-    <div class="container max-w-full xl:mx-auto">
+    <div class="container max-w-full xl:mx-auto" id="my-home">
         <!-- Navbar  -->
         <nav class="flex text-white justify-between p-7 sm:p-8 md:p-10 items-start md:items-center sticky top-0">
             <h2 class="font-semibold text-3xl md:text-4xl my-name">Amal</h2>
             <ul
-                class="text-lg navbar-list flex-col gap-3 mt-60 mr-5 text-center hidden md:flex md:flex-row md:gap-6 md:p-0 md:m-0">
-                <li class="nav-border pad-5">
-                    <a href="#">Home<i class="fa-solid fa-house ml-1 text-base"></i></a>
-                </li>
-                <li class="nav-border pad-5">
-                    <a href="#">About<i class="fa-solid fa-user ml-1 text-base"></i></a>
-                </li>
-                <li class="nav-border pad-5">
-                    <a href="#">Projects <i class="fa-solid fa-check ml-1 text-base"></i></a>
-                </li>
-                <li class="nav-border pad-5">
-                    <a href="#">Contact <i class="fa-solid fa-id-card ml-1 text-base"></i></a>
-                </li>
-                <li class=" pad-5 nav-border">
-                    <a href="#"> Resume <i class="fa-solid fa-file-arrow-down download-icon ml-1 text-base"></i></a>
-                </li>
+                class="text-lg navbar-list flex-col gap-3 mt-60 mr-7 text-center hidden md:flex md:flex-row md:gap-6 md:p-0 md:m-0">
+                <a href="#my-home">
+                    <li class="nav-border pad-5">
+                        Home<i class="fa-solid fa-house ml-1 text-base"></i>
+                    </li>
+                </a>
+                <a href="#my-about">
+                    <li class="nav-border pad-5">
+                        About<i class="fa-solid fa-user ml-1 text-base"></i>
+                    </li>
+                </a>
+                <a href="#my-skills">
+                    <li class="nav-border pad-5">
+                        Skills<i class="fa-solid fa-screwdriver-wrench ml-1 text-base"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="nav-border pad-5">
+                        Projects<i class="fa-solid fa-check ml-1 text-base"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="nav-border pad-5">
+                        Contact<i class="fa-solid fa-id-card ml-1 text-base"></i>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="pad-5 nav-border">
+                        Resume<i class="fa-solid fa-file-arrow-down download-icon ml-1 text-base"></i>
+                    </li>
+                </a>
             </ul>
             <div class="toggle-button-container block md:hidden">
                 <i class="fa-solid fa-bars toggle-btn text-2xl md:text-3xl"></i>
+                <i class="fa-solid fa-xmark text-2xl md:text-3xl display-none"></i>
             </div>
+
         </nav>
 
         <!-- Hero Section  -->
@@ -55,7 +72,7 @@
             <div>
                 <div
                     class="hero-section flex flex-col-reverse justify-center items-center p-10 md:flex-row md:justify-around gap-8">
-                    <div class="info md:mr-8 rounded-md p-4 md:p-8">
+                    <div class="info md:mr-8 rounded-md px-4 py-4 md:p-8">
                         <p class="text-lg xl:text-2xl text-center pt-1 md:mt-0 md:text-left font-semibold">FULL STACK
                             DEVELOPER <i class="fa-solid fa-code text-lg xl:text-2xl ml-1"></i></p>
                         <h1 class="font-bold text-3xl lg:text-5xl text-center pt-1 sm:mt-0 sm:text-left">
@@ -74,7 +91,7 @@
 
             <!-- About section  -->
             <section class="section2">
-                <div class="about-section text-white pl-8 pr-8 pt-6 md:pt-8 flex flex-col">
+                <div class="about-section text-white pl-8 pr-8 pt-6 md:pt-11 flex flex-col" id="my-about">
                     <div>
                         <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5">About
                             Me<i class="fa-solid fa-user text-2xl md:text-4xl ml-3"></i></h2>
@@ -98,7 +115,7 @@
             </section>
 
             <!-- Skills section  -->
-            <section class="section3">
+            <section class="section3" id="my-skills">
                 <div class="skills-section text-white pl-8 pr-8 pt-8 pb-10 flex flex-col">
                     <div>
                         <h2

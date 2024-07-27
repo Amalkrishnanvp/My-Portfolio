@@ -2,9 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.querySelector(".toggle-button-container");
   const navbarList = document.querySelector(".navbar-list");
   const navBar = document.querySelector("nav");
+  const bars = document.querySelector(".fa-bars");
+  const xMark = document.querySelector(".fa-xmark");
 
   toggleBtn.addEventListener("click", () => {
     navbarList.classList.toggle("toggle-list");
+    bars.classList.toggle("display-none");
+    xMark.classList.toggle("display-none");
+
     if (navbarList.classList.contains("toggle-list")) {
       navBar.classList.add("h-screen");
     } else {
@@ -14,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function typeAnimation() {
     // words to show
-    const words = ["Developer", "Designer", "Coder"];
+    const words = ["Developer", "Designer"];
     // setting index for selecting word in the position of 1
     let i = 0;
     // index of word in the array words for selecting different word
@@ -53,13 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
             case 0:
               wordIndex = 1;
               break;
-
-            case 1:
-              wordIndex = 2;
-              break;
-
             // resetting the index to zero after completed typing the all words
-            case 2:
+            case 1:
               wordIndex = 0;
               break;
           }

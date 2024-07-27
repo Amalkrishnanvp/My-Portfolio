@@ -54,6 +54,13 @@ nav {
 .whole-section {
   background-color: #003566;
 }
+.display-none {
+  display: none !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes blink {
   0%,
   100% {
