@@ -23,14 +23,14 @@
 </head>
 
 <body>
-    <div class="container max-w-full xl:mx-auto" id="my-home">
+    <div class="" id="my-home">
         <!-- Navbar  -->
-        <nav class="flex text-white justify-between p-7 sm:p-8 md:p-10 items-start md:items-center sticky top-0">
+        <nav class="flex text-white justify-between p-5 sm:p-7 lg:p-9 items-start lg:items-center sticky top-0">
             <!-- my name heading -->
             <h2 class="font-semibold text-3xl md:text-4xl my-name">Amal</h2>
             <!-- navbar items for different sections -->
             <ul
-                class="text-lg navbar-list flex-col gap-3 mt-60 mr-7 text-center hidden md:flex md:flex-row md:gap-6 md:p-0 md:m-0">
+                class="text-lg navbar-list flex-col gap-3 mt-60 mr-7 text-center hidden lg:flex lg:flex-row lg:gap-6 lg:p-0 lg:m-0">
                 <a href="#my-home">
                     <li class="nav-border pad-5">
                         Home<i class="fa-solid fa-house ml-1 text-base"></i>
@@ -63,7 +63,7 @@
                 </a>
             </ul>
             <!-- toggle button for mobile phones instead of navbar items  -->
-            <div class="toggle-button-container block md:hidden">
+            <div class="toggle-button-container block lg:hidden">
                 <i class="fa-solid fa-bars toggle-btn text-2xl md:text-3xl"></i>
                 <!-- cross mark for closing the navbar  -->
                 <i class="fa-solid fa-xmark text-2xl md:text-3xl display-none"></i>
@@ -72,183 +72,192 @@
         </nav>
 
         <!-- Hero Section  -->
-        <section class="section1">
-            <div>
-                <div
-                    class="hero-section flex flex-col-reverse justify-center items-center p-10 md:flex-row md:justify-around gap-8">
-                    <!-- info on my name and role  -->
-                    <div class="info md:mr-8 rounded-md px-4 py-4 md:p-8">
-                        <p class="text-lg xl:text-2xl text-center pt-1 md:mt-0 md:text-left font-semibold">FULL STACK
-                            DEVELOPER <i class="fa-solid fa-code text-lg xl:text-2xl ml-1"></i></p>
-                        <h1 class="font-bold text-3xl lg:text-5xl text-center pt-1 sm:mt-0 sm:text-left">
-                            Amal Krishnan
-                            v p</h1>
-                    </div>
-                    <!-- my image  -->
-                    <div class="picture">
-                        <img src="https://media.licdn.com/dms/image/D4E03AQGR5QMxbCDppA/profile-displayphoto-shrink_800_800/0/1721888498809?e=1727308800&v=beta&t=s5FcZXpjQLASUmLBPUwYUYEtiDIV8v2-rI1VJMFRI74"
-                            class="w-96 rounded-full">
+        <div class="flex justify-center">
+            <section class="section1 lg:w-[1220px]">
+                <div>
+                    <div
+                        class="hero-section flex flex-col-reverse justify-center items-center p-11 md:flex-row md:justify-around gap-8">
+                        <!-- info on my name and role  -->
+                        <div class="info md:mr-8 rounded-md px-4 py-4 md:p-8">
+                            <p class="text-lg lg:text-xl xl:text-2xl text-center pt-1 md:mt-0 md:text-left font-semibold">FULL
+                                STACK
+                                DEVELOPER <i class="fa-solid fa-code text-lg xl:text-2xl ml-1"></i></p>
+                            <h1 class="font-bold text-3xl lg:text-4xl xl:text-5xl text-center pt-1 sm:mt-0 sm:text-left">
+                                Amal Krishnan
+                                v p</h1>
+                        </div>
+                        <!-- my image  -->
+                        <div class="picture">
+                            <img src="https://media.licdn.com/dms/image/D4E03AQGR5QMxbCDppA/profile-displayphoto-shrink_800_800/0/1721888498809?e=1727308800&v=beta&t=s5FcZXpjQLASUmLBPUwYUYEtiDIV8v2-rI1VJMFRI74"
+                                class="w-96 rounded-full">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section class="whole-section">
+        <div class="color-div flex justify-center">
+            <section class="whole-section px-10 lg:w-[1220px]">
 
-            <!-- About section  -->
-            <section class="section2" id="my-about">
-                <div class="about-section text-white pl-8 pr-8 pt-6 md:pt-11 flex flex-col">
-                    <!-- about section heading  -->
-                    <div>
-                        <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5">About
-                            Me<i class="fa-solid fa-user text-2xl md:text-4xl ml-3"></i></h2>
-                    </div>
-                    <!-- more details in about section  -->
-                    <div class="flex flex-col items-center justify-center pt-4 md:flex-row md:pt-6 md:justify-around">
-                        <!-- my image in about section  -->
-                        <div class="profile-img md:shrink-0 md:mr-20">
-                            <img src="https://media.licdn.com/dms/image/D5603AQF8yAYO2B5_Bw/profile-displayphoto-shrink_800_800/0/1721052494081?e=1727308800&v=beta&t=82rldmcPQvW1TWuWPI1BME7XDyKKh-q3MTyOcbRze5M"
-                                class="rounded-full md:h-96 w-96">
+                <!-- About section  -->
+                <section class="section2" id="my-about">
+                    <div class="about-section text-white pt-6 md:pt-11 flex flex-col">
+                        <!-- about section heading  -->
+                        <div>
+                            <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5">About
+                                Me<i class="fa-solid fa-user text-2xl md:text-4xl ml-3"></i></h2>
                         </div>
-                        <!-- about section details  -->
-                        <div class="about max-w-2xl mt-8 md:mt-0">
-                            <h3 class="text-3xl md:text-5xl mb-8">I am a <span id="identity"
-                                    class="text-3xl md:text-5xl"></span><span id="cursor"
-                                    class="text-3xl md:text-5xl d-inline-block">|</span></h3>
-                            <p class="tex-3xl">Welcome to my portfolio! I'm Amal, A Full Stack Developer with focus on
-                                MERN stack. With a deep understanding of both front-end and back-end technologies, I
-                                specialize in delivering comprehensive solutions that not only look great but also
-                                perform flawlessly.</p>
+                        <!-- more details in about section  -->
+                        <div
+                            class="flex flex-col items-center justify-center pt-4 md:flex-row md:pt-6 md:justify-around">
+                            <!-- my image in about section  -->
+                            <div class="profile-img md:shrink-0 md:mr-20">
+                                <img src="https://media.licdn.com/dms/image/D5603AQF8yAYO2B5_Bw/profile-displayphoto-shrink_800_800/0/1721052494081?e=1727308800&v=beta&t=82rldmcPQvW1TWuWPI1BME7XDyKKh-q3MTyOcbRze5M"
+                                    class="rounded-full md:h-96 w-96">
+                            </div>
+                            <!-- about section details  -->
+                            <div class="about max-w-2xl mt-8 md:mt-0">
+                                <h3 class="text-3xl md:text-5xl mb-8">I am a <span id="identity"
+                                        class="text-3xl md:text-5xl"></span><span id="cursor"
+                                        class="text-3xl md:text-5xl d-inline-block">|</span></h3>
+                                <p class="tex-3xl">Welcome to my portfolio! I'm Amal, A Full Stack Developer with focus
+                                    on
+                                    MERN stack. With a deep understanding of both front-end and back-end technologies, I
+                                    specialize in delivering comprehensive solutions that not only look great but also
+                                    perform flawlessly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills section  -->
+                <section class="section3" id="my-skills">
+                    <div class="skills-section text-white pt-10 flex flex-col">
+                        <!-- skill section heading  -->
+                        <div>
+                            <h2
+                                class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5 text-right">
+                                <i class="fa-solid fa-screwdriver-wrench text-2xl md:text-4xl mr-3"></i>My Skills
+                            </h2>
+                        </div>
+                        <!-- my skills  -->
+                        <div class="skill-icons pt-5 md:pt-7 flex justify-center">
+                            <div class="box-row grid grid-cols-3 place-items-center gap-6">
+                                <div
+                                    class="box1 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                    <img src="icons/html.png">
+                                </div>
+                                <div
+                                    class="box2  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                    <img src=" icons/css.png">
+                                </div>
+                                <div
+                                    class="box3  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                    <img src=" icons/javascript.png">
+                                </div>
+                                <div
+                                    class="box4  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                    <img src=" icons/tailwind.svg">
+                                </div>
+                                <div
+                                    class="box5  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                    <img src=" icons/git.png">
+                                </div>
+                                <div
+                                    class="box6  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                    <img src=" icons/java.png">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects section  -->
+                <div class="section4" id="my-projects">
+                    <div class="projects-section text-white pt-10 pb-10 flex flex-col">
+                        <!-- heading in project section  -->
+                        <div>
+                            <h2
+                                class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 project-heading md:pl-5 text-left">
+                                My Projects
+                                <i class="fa-solid fa-check text-2xl md:text-4xl"></i>
+                            </h2>
+                        </div>
+                        <!-- my projects  -->
+                        <div class="projects-container flex justify-center">
+                            <div
+                                class="projects pt-5 md:pt-7 grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-y-0 lg:gap-x-12 lg:px-5">
+                                <!-- project 1 -->
+                                <div class="project-1 flex flex-col items-center text-center">
+                                    <div class="project-img shrink-0">
+                                        <img src="images/img1.png" class="rounded-lg">
+                                    </div>
+                                    <div class="project-heading font-semibold text-2xl md:text-3xl mt-6">Quiz App</div>
+                                    <div class="project-details mt-5">A simple and interactive quiz app designed to test
+                                        users'
+                                        knowledge on various topics including a clean interface with several
+                                        questions</div>
+                                    <div class="project-link mt-4">
+                                        <a href="https://amalkrishnanvp.github.io/quiz-app/" class="project-view">View
+                                            Project <i class="fa-solid fa-eye text-white"></i></a>
+
+                                    </div>
+                                </div>
+                                <!-- project 2 -->
+                                <div class="project-2 flex flex-col items-center text-center">
+                                    <div class="project-img shrink-0">
+                                        <img src="images/img2.png" class="rounded-lg">
+                                    </div>
+                                    <div class="project-heading font-semibold text-2xl md:text-3xl mt-6">Weather
+                                        Application</div>
+                                    <div class="project-details mt-5">A dynamic weather application that provides
+                                        real-time
+                                        weather updates for cities worldwide using weather API to fetch and
+                                        display current conditions
+                                    </div>
+                                    <div class="project-link mt-4">
+                                        <a href="https://amalkrishnanvp.github.io/Weather-application/"
+                                            class="project-view">View
+                                            Project <i class="fa-solid fa-eye text-white"></i></a>
+
+                                    </div>
+                                </div>
+                                <!-- project 3 -->
+                                <div class="project-3 flex flex-col items-center text-center">
+                                    <div class="project-img shrink-0">
+                                        <img src="images/img3.png" class="rounded-lg">
+                                    </div>
+                                    <div class="project-heading font-semibold text-2xl md:text-3xl mt-6">Medito Website
+                                        Clone</div>
+                                    <div class="project-details mt-5">A basic clone of the Medito website, showcasing a
+                                        user-friendly design and layout inspired by the original site and ensures
+                                        responsiveness</div>
+                                    <div class="project-link mt-4">
+                                        <a href="https://amalkrishnanvp.github.io/Medito-Website-Clone/"
+                                            class="project-view">View
+                                            Project <i class="fa-solid fa-eye text-white"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Skills section  -->
-            <section class="section3" id="my-skills">
-                <div class="skills-section text-white pl-8 pr-8 pt-10 flex flex-col">
-                    <!-- skill section heading  -->
-                    <div>
-                        <h2
-                            class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5 text-right">
-                            <i class="fa-solid fa-screwdriver-wrench text-2xl md:text-4xl mr-3"></i>My Skills
-                        </h2>
-                    </div>
-                    <!-- my skills  -->
-                    <div class="skill-icons pt-5 md:pt-7 flex justify-center">
-                        <div class="box-row grid grid-cols-3 place-items-center gap-6">
-                            <div
-                                class="box1 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/html.png">
-                            </div>
-                            <div
-                                class="box2  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src=" icons/css.png">
-                            </div>
-                            <div
-                                class="box3  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src=" icons/javascript.png">
-                            </div>
-                            <div
-                                class="box4  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src=" icons/tailwind.svg">
-                            </div>
-                            <div
-                                class="box5  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src=" icons/git.png">
-                            </div>
-                            <div
-                                class="box6  bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src=" icons/java.png">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects section  -->
-            <div class="section4" id="my-projects">
-                <div class="projects-section text-white pl-8 pr-8 pt-10 pb-10 flex flex-col">
-                    <!-- heading in project section  -->
-                    <div>
-                        <h2
-                            class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 project-heading md:pl-5 text-left">
-                            My Projects
-                            <i class="fa-solid fa-check text-2xl md:text-4xl"></i>
-                        </h2>
-                    </div>
-                    <!-- my projects  -->
-                    <div class="projects-container flex justify-center">
-                        <div class="projects pt-5 md:pt-7 grid grid-cols-1 md:grid-cols-3 gap-x-12 md:px-5">
-                            <!-- project 1 -->
-                            <div class="project-1 text-center">
-                                <div class="project-img">
-                                    <img src="images/img1.png" class="rounded-lg">
-                                </div>
-                                <div class="project-heading font-semibold text-2xl md:text-3xl mt-4">Quiz App</div>
-                                <div class="project-details mt-3">A simple and interactive quiz app designed to test
-                                    users'
-                                    knowledge on various topics including a clean interface with several
-                                    questions</div>
-                                <div class="project-link mt-2">
-                                    <a href="https://amalkrishnanvp.github.io/quiz-app/" class="project-view">View
-                                        Project <i class="fa-solid fa-eye text-white"></i></a>
-
-                                </div>
-                            </div>
-                            <!-- project 2 -->
-                            <div class="project-1 text-center">
-                                <div class="project-img">
-                                    <img src="images/img2.png" class="rounded-lg">
-                                </div>
-                                <div class="project-heading font-semibold text-2xl md:text-3xl mt-4">Weather
-                                    Application</div>
-                                <div class="project-details mt-3">A dynamic weather application that provides real-time
-                                    weather updates for cities worldwide using weather API to fetch and
-                                    display current conditions
-                                </div>
-                                <div class="project-link mt-2">
-                                    <a href="https://amalkrishnanvp.github.io/Weather-application/"
-                                        class="project-view">View
-                                        Project <i class="fa-solid fa-eye text-white"></i></a>
-
-                                </div>
-                            </div>
-                            <!-- project 3 -->
-                            <div class="project-1 text-center">
-                                <div class="project-img">
-                                    <img src="images/img3.png" class="rounded-lg">
-                                </div>
-                                <div class="project-heading font-semibold text-2xl md:text-3xl mt-4">Medito Website
-                                    Clone</div>
-                                <div class="project-details mt-3">A basic clone of the Medito website, showcasing a
-                                    user-friendly design and layout inspired by the original site and ensures
-                                    responsiveness</div>
-                                <div class="project-link mt-2">
-                                    <a href="https://amalkrishnanvp.github.io/Medito-Website-Clone/"
-                                        class="project-view">View
-                                        Project <i class="fa-solid fa-eye text-white"></i></a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+        </div>
 
 
 
 
-    <!-- Contact session -->
+        <!-- Contact session -->
 
-    <!-- Footer session  -->
+        <!-- Footer session  -->
 
-    <!-- Website scripts  -->
-    <script src=" app.js">
-    </script>
+        <!-- Website scripts  -->
+        <script src=" app.js">
+        </script>
 </body>
 
 </html>
