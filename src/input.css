@@ -60,6 +60,15 @@ nav {
 html {
   scroll-behavior: smooth;
 }
+.project-view {
+  color: #48cae4;
+}
+.project-view:hover {
+  color: #90e0ef;
+}
+.project-details {
+  color: #e9ecef;
+}
 
 @keyframes blink {
   0%,
