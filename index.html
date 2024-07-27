@@ -26,7 +26,9 @@
     <div class="container max-w-full xl:mx-auto" id="my-home">
         <!-- Navbar  -->
         <nav class="flex text-white justify-between p-7 sm:p-8 md:p-10 items-start md:items-center sticky top-0">
+            <!-- my name heading -->
             <h2 class="font-semibold text-3xl md:text-4xl my-name">Amal</h2>
+            <!-- navbar items for different sections -->
             <ul
                 class="text-lg navbar-list flex-col gap-3 mt-60 mr-7 text-center hidden md:flex md:flex-row md:gap-6 md:p-0 md:m-0">
                 <a href="#my-home">
@@ -44,12 +46,12 @@
                         Skills<i class="fa-solid fa-screwdriver-wrench ml-1 text-base"></i>
                     </li>
                 </a>
-                <a href="#">
+                <a href="#my-projects">
                     <li class="nav-border pad-5">
                         Projects<i class="fa-solid fa-check ml-1 text-base"></i>
                     </li>
                 </a>
-                <a href="#">
+                <a href="#my-contact">
                     <li class="nav-border pad-5">
                         Contact<i class="fa-solid fa-id-card ml-1 text-base"></i>
                     </li>
@@ -60,8 +62,10 @@
                     </li>
                 </a>
             </ul>
+            <!-- toggle button for mobile phones instead of navbar items  -->
             <div class="toggle-button-container block md:hidden">
                 <i class="fa-solid fa-bars toggle-btn text-2xl md:text-3xl"></i>
+                <!-- cross mark for closing the navbar  -->
                 <i class="fa-solid fa-xmark text-2xl md:text-3xl display-none"></i>
             </div>
 
@@ -72,6 +76,7 @@
             <div>
                 <div
                     class="hero-section flex flex-col-reverse justify-center items-center p-10 md:flex-row md:justify-around gap-8">
+                    <!-- info on my name and role  -->
                     <div class="info md:mr-8 rounded-md px-4 py-4 md:p-8">
                         <p class="text-lg xl:text-2xl text-center pt-1 md:mt-0 md:text-left font-semibold">FULL STACK
                             DEVELOPER <i class="fa-solid fa-code text-lg xl:text-2xl ml-1"></i></p>
@@ -79,6 +84,7 @@
                             Amal Krishnan
                             v p</h1>
                     </div>
+                    <!-- my image  -->
                     <div class="picture">
                         <img src="https://media.licdn.com/dms/image/D4E03AQGR5QMxbCDppA/profile-displayphoto-shrink_800_800/0/1721888498809?e=1727308800&v=beta&t=s5FcZXpjQLASUmLBPUwYUYEtiDIV8v2-rI1VJMFRI74"
                             class="w-96 rounded-full">
@@ -90,17 +96,21 @@
         <section class="whole-section">
 
             <!-- About section  -->
-            <section class="section2">
-                <div class="about-section text-white pl-8 pr-8 pt-6 md:pt-11 flex flex-col" id="my-about">
+            <section class="section2" id="my-about">
+                <div class="about-section text-white pl-8 pr-8 pt-6 md:pt-11 flex flex-col">
+                    <!-- about section heading  -->
                     <div>
                         <h2 class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5">About
                             Me<i class="fa-solid fa-user text-2xl md:text-4xl ml-3"></i></h2>
                     </div>
+                    <!-- more details in about section  -->
                     <div class="flex flex-col items-center justify-center pt-4 md:flex-row md:pt-6 md:justify-around">
+                        <!-- my image in about section  -->
                         <div class="profile-img md:shrink-0 md:mr-20">
                             <img src="https://media.licdn.com/dms/image/D5603AQF8yAYO2B5_Bw/profile-displayphoto-shrink_800_800/0/1721052494081?e=1727308800&v=beta&t=82rldmcPQvW1TWuWPI1BME7XDyKKh-q3MTyOcbRze5M"
                                 class="rounded-full md:h-96 w-96">
                         </div>
+                        <!-- about section details  -->
                         <div class="about max-w-2xl mt-8 md:mt-0">
                             <h3 class="text-3xl md:text-5xl mb-8">I am a <span id="identity"
                                     class="text-3xl md:text-5xl"></span><span id="cursor"
@@ -116,14 +126,15 @@
 
             <!-- Skills section  -->
             <section class="section3" id="my-skills">
-                <div class="skills-section text-white pl-8 pr-8 pt-8 pb-10 flex flex-col">
+                <div class="skills-section text-white pl-8 pr-8 pt-10 flex flex-col">
+                    <!-- skill section heading  -->
                     <div>
                         <h2
                             class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 about-heading md:pl-5 text-right">
                             <i class="fa-solid fa-screwdriver-wrench text-2xl md:text-4xl mr-3"></i>My Skills
                         </h2>
                     </div>
-
+                    <!-- my skills  -->
                     <div class="flex justify-center">
                         <div class="skill-icons pt-5 md:pt-7">
                             <div class="box-row grid grid-cols-3 place-items-center gap-6">
@@ -157,11 +168,40 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Projects section  -->
+            <div class="section4" id="my-projects">
+                <div class="projects-section text-white pl-8 pr-8 pt-10 pb-10 flex flex-col">
+                    <!-- heading in project section  -->
+                    <div>
+                        <h2
+                            class="text-4xl md:text-5xl font-semibold md:mb-2 pb-6 pt-2 project-heading md:pl-5 text-left">
+                            My Projects
+                            <i class="fa-solid fa-check text-2xl md:text-4xl"></i>
+                        </h2>
+                    </div>
+                    <!-- my projects  -->
+                    <div class="whole-projects flex justify-center">
+                        <div class="projects-container">
+                            <div class="projects pt-5 md:pt-7">
+                                <div class="project-1">
+                                    <div class="project-img">
+                                        <img src="images/img1.png">
+                                    </div>
+                                    <div class="project-heading"></div>
+                                    <div class="project-details"></div>
+                                    <div class="project-link"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
 
-    <!-- Projects section  -->
+
 
     <!-- Contact session -->
 
