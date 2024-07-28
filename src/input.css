@@ -69,6 +69,9 @@ html {
 .project-details {
   color: #e9ecef;
 }
+footer {
+  background-color: #111118;
+}
 
 @keyframes blink {
   0%,
