@@ -78,6 +78,9 @@ footer {
 .box {
   color: #adb5bd;
 }
+/* .navbar-list {
+  margin-right: -700px !important;
+} */
 
 @keyframes blink {
   0%,

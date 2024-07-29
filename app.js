@@ -4,18 +4,52 @@ document.addEventListener("DOMContentLoaded", () => {
   const navBar = document.querySelector("nav");
   const bars = document.querySelector(".fa-bars");
   const xMark = document.querySelector(".fa-xmark");
+  const list = document.querySelectorAll(".list-item");
+  let navBarToggled = false;
 
-  toggleBtn.addEventListener("click", () => {
-    navbarList.classList.toggle("toggle-list");
+  // function for toggling navbar
+  function toggleNavbar() {
     bars.classList.toggle("display-none");
     xMark.classList.toggle("display-none");
-
     if (navbarList.classList.contains("toggle-list")) {
+      navBarToggled = true;
       navBar.classList.add("h-screen");
     } else {
+      navBarToggled = false;
+      navbarList.style.setProperty("transition", "height 2s", "important");
       navBar.classList.remove("h-screen");
     }
-  });
+  }
+
+  // function for doing toggle on click
+  function toggleButton() {
+    toggleBtn.addEventListener("click", () => {
+      navbarList.classList.toggle("toggle-list");
+      toggleNavbar();
+    });
+  }
+  toggleButton();
+
+  // for removing navbar while clicking items on navbar
+  for (let item of list) {
+    item.addEventListener("click", () => {
+      if (navBarToggled === true) {
+        navbarList.classList.remove("toggle-list");
+      }
+      toggleNavbar();
+    });
+  }
+
+  // function transitionNavbar() {
+  //   let name = document.querySelector(".my-name");
+  //   console.log("abc");
+  //   name.addEventListener("click", () => {
+  //     console.log("bcs");
+  //     navbarList.style.setProperty("transition", "margin-right 2s", "important");
+  //     navbarList.style.setProperty("margin-right", "400px", "important");
+  //   });
+  // }
+  // transitionNavbar();
 
   function typeAnimation() {
     // words to show
