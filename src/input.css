@@ -75,6 +75,9 @@ html {
 footer {
   background-color: #001d3d;
 }
+.box {
+  color: #adb5bd;
+}
 
 @keyframes blink {
   0%,

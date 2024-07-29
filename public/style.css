@@ -571,6 +571,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -591,6 +595,10 @@ video {
   margin-right: 1.75rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -609,10 +617,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .block {
@@ -707,6 +711,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -721,6 +729,19 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-x-32 {
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
 }
 
 .gap-y-12 {
@@ -761,6 +782,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -792,8 +817,18 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pb-6 {
@@ -824,16 +859,24 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .text-left {
@@ -871,6 +914,16 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -992,6 +1045,10 @@ footer {
   background-color: #001d3d;
 }
 
+.box {
+  color: #adb5bd;
+}
+
 @keyframes blink {
   0%,
   100% {
@@ -1006,6 +1063,11 @@ footer {
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1069,6 +1131,10 @@ footer {
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
   }
 
   .md\:w-32 {
