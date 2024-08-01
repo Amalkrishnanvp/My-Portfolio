@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/styles/input.css -o ./public/stylesheets/style.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/stylesheets/style.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,6 @@
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "node-static": "^0.7.11"
   }
 }
