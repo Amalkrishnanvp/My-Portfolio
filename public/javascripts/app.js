@@ -5,7 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const bars = document.querySelector(".fa-bars");
   const xMark = document.querySelector(".fa-xmark");
   const list = document.querySelectorAll(".list-item");
+  const form = document.querySelector("#my-form");
   let navBarToggled = false;
+
+  // preventing default refreshing on form submit
+  form.addEventListener("submit", (event) => {
+    console.log("hi");
+    // event.preventDefault();
+  });
 
   // function for toggling navbar
   function toggleNavbar() {
@@ -39,17 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleNavbar();
     });
   }
-
-  // function transitionNavbar() {
-  //   let name = document.querySelector(".my-name");
-  //   console.log("abc");
-  //   name.addEventListener("click", () => {
-  //     console.log("bcs");
-  //     navbarList.style.setProperty("transition", "margin-right 2s", "important");
-  //     navbarList.style.setProperty("margin-right", "400px", "important");
-  //   });
-  // }
-  // transitionNavbar();
 
   function typeAnimation() {
     // words to show
