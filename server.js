@@ -2,15 +2,19 @@ const http = require("http");
 const url = require("url");
 const path = require("path");
 const fs = require("fs");
+const queryString = require("querystring");
 
+// creating a server
 const server = http.createServer((req, res) => {
   const pathName = url.parse(req.url).pathname;
 
+  // storing paths in variables for easy accessing
   const stylePath = path.join("public", "stylesheets", "style.css");
   const scriptPath = path.join("public", "javascripts", "app.js");
   const iconsPath = path.join("public", "icons");
   const imagesPath = path.join("public", "images");
 
+  // defining routes
   if (req.method === "GET" && pathName === "/") {
     fs.readFile("index.html", (err, data) => {
       if (err) {
@@ -22,6 +26,22 @@ const server = http.createServer((req, res) => {
         res.write(data);
         res.end();
       }
+    });
+    // route for form submition
+  } else if (req.method === "POST" && pathName === "/formaction") {
+    let body = "";
+
+    req.on("data", (chunk) => {
+      body += chunk.toString();
+    });
+
+    req.on("end", () => {
+      const parsedUrl = queryString.parse(body);
+      console.log(parsedUrl);
+
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.write("Form submitted and message sended");
+      res.end();
     });
   } else if (
     req.method === "GET" &&
@@ -167,11 +187,6 @@ const server = http.createServer((req, res) => {
         res.end();
       }
     });
-  } else if (req.method === "POST" && pathName === "/formaction") {
-    res.writeHead(200, { "Content-Type": "text/plain" });
-    console.log("hi");
-    res.write("hi");
-    res.end();
   } else if (pathName === "/favicon.ico") {
     res.writeHead(500, { "Content-Type": "text/plain" });
     res.end();
