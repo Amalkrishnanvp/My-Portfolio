@@ -36,7 +36,9 @@ const server = http.createServer((req, res) => {
         console.log(err);
       }
       const { name, email, message } = fields;
-      console.log(fields);
+      console.log("name: ", name[0]);
+      console.log("email: ", email[0]);
+      console.log("message: ", message[0]);
     });
   } else if (
     req.method === "GET" &&
