@@ -3,6 +3,7 @@ const url = require("url");
 const path = require("path");
 const fs = require("fs");
 const queryString = require("querystring");
+const formidable = require("formidable");
 
 // creating a server
 const server = http.createServer((req, res) => {
@@ -29,19 +30,13 @@ const server = http.createServer((req, res) => {
     });
     // route for form submition
   } else if (req.method === "POST" && pathName === "/formaction") {
-    let body = "";
-
-    req.on("data", (chunk) => {
-      body += chunk.toString();
-    });
-
-    req.on("end", () => {
-      const parsedUrl = queryString.parse(body);
-      console.log(parsedUrl);
-
-      res.writeHead(200, { "Content-Type": "text/html" });
-      res.write("Form submitted and message sended");
-      res.end();
+    const form = new formidable.IncomingForm();
+    form.parse(req, (err, fields) => {
+      if (err) {
+        console.log(err);
+      }
+      const { name, email, message } = fields;
+      console.log(fields);
     });
   } else if (
     req.method === "GET" &&
