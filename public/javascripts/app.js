@@ -13,20 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     console.log("step 1 completed");
 
-    const formData = new FormData("form");
+    const formData = new FormData(form);
     console.log("step 2 completed");
 
     fetch("/formaction", {
-      method: "GET",
+      method: "POST",
       body: formData,
-    })
-      .then((respone) => respone.json())
-      .then((data) => {
-        console.log("Data: ", data);
-      })
-      .catch((error) => {
-        console.log("Error: ", error);
-      });
+    });
   });
 
   // function for toggling navbar
