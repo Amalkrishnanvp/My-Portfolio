@@ -10,8 +10,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // preventing default refreshing on form submit
   form.addEventListener("submit", (event) => {
-    console.log("hi");
-    // event.preventDefault();
+    event.preventDefault();
+    console.log("step 1 completed");
+
+    const formData = new FormData("form");
+    console.log("step 2 completed");
+
+    fetch("/formaction", {
+      method: "GET",
+      body: formData,
+    })
+      .then((respone) => respone.json())
+      .then((data) => {
+        console.log("Data: ", data);
+      })
+      .catch((error) => {
+        console.log("Error: ", error);
+      });
   });
 
   // function for toggling navbar
