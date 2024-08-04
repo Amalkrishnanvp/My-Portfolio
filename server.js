@@ -41,10 +41,6 @@ const server = http.createServer((req, res) => {
         const userEmail = email[0];
         const userMessage = message[0];
 
-        // console.log(userName);
-        // console.log(userEmail);
-        // console.log(userMessage);
-
         // configure nodemailer
         const transport = nodemailer.createTransport({
           service: "gmail",

@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
       method: "POST",
       body: formData,
     });
+
+    form.reset();
   });
 
   // function for toggling navbar
