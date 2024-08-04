@@ -13,6 +13,7 @@
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
-    "formidable": "^3.5.1"
+    "formidable": "^3.5.1",
+    "nodemailer": "^6.9.14"
   }
 }

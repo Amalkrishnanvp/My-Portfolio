@@ -2,8 +2,8 @@ const http = require("http");
 const url = require("url");
 const path = require("path");
 const fs = require("fs");
-const queryString = require("querystring");
 const formidable = require("formidable");
+const nodemailer = require("nodemailer");
 
 // creating a server
 const server = http.createServer((req, res) => {
@@ -33,16 +33,62 @@ const server = http.createServer((req, res) => {
     const form = new formidable.IncomingForm();
     form.parse(req, (err, fields) => {
       if (err) {
-        console.log(err);
-      }
-      const { name, email, message } = fields;
-      const userName = name[0];
-      const userEmail = email[0];
-      const userMessage = message[0];
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.end("Error parsing form data");
+      } else {
+        const { name, email, message } = fields;
+        const userName = name[0];
+        const userEmail = email[0];
+        const userMessage = message[0];
 
-      console.log(userName);
-      console.log(userEmail);
-      console.log(userMessage);
+        // console.log(userName);
+        // console.log(userEmail);
+        // console.log(userMessage);
+
+        // configure nodemailer
+        const transport = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: "yedhuyedhuzzz@gmail.com",
+            pass: "yrtm rixv uwgo edqe",
+          },
+        });
+
+        // defining mailoptions
+        const mailOptions = {
+          from: userEmail,
+          to: "amalyedhu10@gmail.com",
+          subject: `Message from ${userName}`,
+          text: `You have received a new message from your website contact form.
+
+         Name: ${userName}
+         Email: ${userEmail}
+
+         Message: 
+         ${userMessage}
+         
+         Please respond to the sender as soon as possible.
+
+         Message sent on: ${new Date().toLocaleString()}
+         
+         Thank you,
+         Your Website Team`,
+        };
+        console.log("Sending email...");
+
+        // send email
+        transport.sendMail(mailOptions, (error, info) => {
+          if (error) {
+            console.log("Can't send mail", error);
+            res.writeHead(500, { "Content-Type": "text/plain" });
+            res.end();
+          } else {
+            console.log("Email sent: ", info.response);
+            res.writeHead(200, { "Content-Type": "text/plain" });
+            res.end();
+          }
+        });
+      }
     });
   } else if (
     req.method === "GET" &&
@@ -192,7 +238,8 @@ const server = http.createServer((req, res) => {
     res.writeHead(500, { "Content-Type": "text/plain" });
     res.end();
   } else {
-    res.end();
+    res.writeHead(400, { "Content-Type": "text/plain" });
+    res.end("Not found");
   }
 });
 
