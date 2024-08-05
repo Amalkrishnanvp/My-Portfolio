@@ -6,12 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const xMark = document.querySelector(".fa-xmark");
   const list = document.querySelectorAll(".list-item");
   const form = document.querySelector("#my-form");
+  const popUpMsg = document.querySelector(".pop-up-msg");
   let navBarToggled = false;
 
   // preventing default refreshing on form submit
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     console.log("step 1 completed");
+    popUpMsg.classList.remove("hidden");
+    popUpMsg.classList.add("flex");
 
     const formData = new FormData(form);
     console.log("step 2 completed");
