@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
       navBar.classList.add("h-screen");
     } else {
       navBarToggled = false;
-      navbarList.style.setProperty("transition", "height 2s", "important");
       navBar.classList.remove("h-screen");
     }
   }

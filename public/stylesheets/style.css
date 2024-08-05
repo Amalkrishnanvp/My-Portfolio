@@ -651,6 +651,10 @@ video {
   height: 7rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -1133,6 +1137,10 @@ footer {
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-32 {
