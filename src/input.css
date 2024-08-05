@@ -80,6 +80,11 @@ footer {
 }
 .pop-up-msg {
   top: 30%;
+  background-color: green !important;
+  transition: opacity 2s ease-in-out;
+}
+.fade {
+  opacity: 0;
 }
 
 @keyframes blink {

@@ -15,6 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("step 1 completed");
     popUpMsg.classList.remove("hidden");
     popUpMsg.classList.add("flex");
+    popUpMsg.classList.add("opacity-10");
+
+    setTimeout(() => {
+      popUpMsg.classList.add("fade");
+
+      setTimeout(() => {
+        popUpMsg.classList.remove("flex");
+        popUpMsg.classList.remove("fade");
+        popUpMsg.classList.add("hidden");
+      }, 2200);
+    }, 2500);
 
     const formData = new FormData(form);
     console.log("step 2 completed");
