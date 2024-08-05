@@ -46,7 +46,7 @@ nav {
   box-shadow: 0px 2px 15px 2px #8b8eaf;
 }
 .form-shadow {
-  box-shadow: 0px 1px 20px .5px #001d3d;
+  box-shadow: 0px 1px 20px 0.5px #001d3d;
 }
 nav {
   box-shadow: 0 1px 5px #001d3d;
@@ -78,9 +78,9 @@ footer {
 .box {
   color: #adb5bd;
 }
-/* .navbar-list {
-  margin-right: -700px !important;
-} */
+.pop-up-msg {
+  top: 30%;
+}
 
 @keyframes blink {
   0%,

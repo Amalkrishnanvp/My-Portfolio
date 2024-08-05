@@ -262,24 +262,36 @@
                         </div>
                         <!-- Form in contact section -->
                         <div class="contact-form flex justify-center pt-5 md:pt-7 pb-16">
+                            <div
+                                class="flex gap-2 fixed pop-up-msg text-white border-blue-400 py-2 px-4 bg-green-600 rounded-md">
+                                <div class="text-base">Your message has been sent</div>
+                                <div>
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                     <!-- <img src="public/images/carrier-pigeon.png" class="w-7"> -->
+                                </div>
+                            </div>
                             <form class="w-full sm:max-w-md" id="my-form" action="/formaction" method="POST">
                                 <div class="form-div flex flex-col gap-5 form-shadow rounded-md p-6 md:p-7">
                                     <div class="flex flex-col">
                                         <label class="mb-2 text-lg">Full Name</label>
-                                        <input type="text" class="text-black outline-none md:h-11 p-3 rounded-md" id="name" name="name" required>
+                                        <input type="text" class="text-black outline-none md:h-11 p-3 rounded-md"
+                                            id="name" name="name" required>
                                     </div>
                                     <div class="flex flex-col">
                                         <label class="mb-2 text-lg">Email</label>
-                                        <input type="Email" class="text-black outline-none md:h-11 p-3 rounded-md" id="email" name="email" required>
+                                        <input type="Email" class="text-black outline-none md:h-11 p-3 rounded-md"
+                                            id="email" name="email" required>
                                     </div>
                                     <div class="flex flex-col">
                                         <label class="mb-2 text-lg">Message</label>
                                         <textarea
-                                            class="text-black outline-none h-28 md:h-24 p-3 rounded-md resize-none" id="message" name="message" required></textarea>
+                                            class="text-black outline-none h-28 md:h-24 p-3 rounded-md resize-none"
+                                            id="message" name="message" required></textarea>
                                     </div>
                                     <div class="mt-3">
                                         <input type="submit"
-                                            class="text-white w-full text-lg outline-none h-14 md:h-12 p-2 rounded-md bg-blue-700 hover:bg-blue-600 my-auto" value="Send Message">
+                                            class="text-white w-full text-lg outline-none h-14 md:h-12 p-2 rounded-md bg-blue-700 hover:bg-blue-600 my-auto"
+                                            value="Send Message">
                                     </div>
                                 </div>
                             </form>
