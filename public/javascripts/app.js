@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
     xMark.classList.toggle("display-none");
     if (navbarList.classList.contains("toggle-list")) {
       navBarToggled = true;
-      navBar.classList.add("h-screen");
+      navBar.style.height = "100vh";
     } else {
       navBarToggled = false;
-      navBar.classList.remove("h-screen");
+      navBar.style.height = "auto";
     }
   }
 
