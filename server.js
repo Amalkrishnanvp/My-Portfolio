@@ -194,6 +194,45 @@ const server = http.createServer((req, res) => {
         res.end();
       }
     });
+  } else if (req.method === "GET" && pathName === "/public/icons/node.jpg") {
+    fs.readFile(path.join(iconsPath, "node.jpg"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if (req.method === "GET" && pathName === "/public/icons/express.png") {
+    fs.readFile(path.join(iconsPath, "express.png"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if (
+    req.method === "GET" &&
+    pathName === "/public/icons/handlebars.png"
+  ) {
+    fs.readFile(path.join(iconsPath, "handlebars.png"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
   } else if (req.method === "GET" && pathName === "/public/images/img1.png") {
     fs.readFile(path.join(imagesPath, "img1.png"), (err, data) => {
       if (err) {
