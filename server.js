@@ -233,6 +233,18 @@ const server = http.createServer((req, res) => {
         res.end();
       }
     });
+  } else if (req.method === "GET" && pathName === "/public/images/me.jpg") {
+    fs.readFile(path.join(imagesPath, "me.jpg"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
   } else if (req.method === "GET" && pathName === "/public/images/img1.png") {
     fs.readFile(path.join(imagesPath, "img1.png"), (err, data) => {
       if (err) {
@@ -259,6 +271,42 @@ const server = http.createServer((req, res) => {
     });
   } else if (req.method === "GET" && pathName === "/public/images/img3.png") {
     fs.readFile(path.join(imagesPath, "img3.png"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if (req.method === "GET" && pathName === "/public/images/img4.png") {
+    fs.readFile(path.join(imagesPath, "img4.png"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if (req.method === "GET" && pathName === "/public/images/img5.png") {
+    fs.readFile(path.join(imagesPath, "img5.png"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if (req.method === "GET" && pathName === "/public/images/img6.png") {
+    fs.readFile(path.join(imagesPath, "img6.png"), (err, data) => {
       if (err) {
         res.writeHead(500, { "Content-Type": "text/plain" });
         res.write("Error found, " + err);
