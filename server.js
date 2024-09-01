@@ -317,6 +317,42 @@ const server = http.createServer((req, res) => {
         res.end();
       }
     });
+  } else if (req.method === "GET" && pathName === "/public/images/img7.png") {
+    fs.readFile(path.join(imagesPath, "img7.png"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if (req.method === "GET" && pathName === "/public/images/img8.png") {
+    fs.readFile(path.join(imagesPath, "img8.png"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  } else if (req.method === "GET" && pathName === "/public/images/img9.png") {
+    fs.readFile(path.join(imagesPath, "img9.png"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
   } else if (pathName === "/favicon.ico") {
     res.writeHead(500, { "Content-Type": "text/plain" });
     res.end();
