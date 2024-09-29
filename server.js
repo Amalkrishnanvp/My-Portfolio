@@ -245,7 +245,31 @@ const server = http.createServer((req, res) => {
         res.end();
       }
     });
-  } else if (req.method === "GET" && pathName === "/public/images/img1.png") {
+  } else if (req.method === "GET" && pathName === "/public/images/me.jpg") {
+    fs.readFile(path.join(imagesPath, "me.jpg"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  }else if (req.method === "GET" && pathName === "/public/images/amal1.jpg") {
+    fs.readFile(path.join(imagesPath, "amal1.jpg"), (err, data) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        res.write("Error found, " + err);
+        res.end();
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  }else if (req.method === "GET" && pathName === "/public/images/img1.png") {
     fs.readFile(path.join(imagesPath, "img1.png"), (err, data) => {
       if (err) {
         res.writeHead(500, { "Content-Type": "text/plain" });
