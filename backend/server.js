@@ -28,15 +28,15 @@ const port = process.env.port || 1000;
 
 // Configuring hbs
 app.set("view engine", "hbs");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "../frontend/views"));
 app.set("view options", { layout: "layouts/layout.hbs" });
 
 // Middlewares
-app.use(express.static("public"));
+app.use(express.static("../frontend/public"));
 app.use(express.json());
 
 // Import routes
-import userRouter from "./backend/routes/userRoutes.js";
+import userRouter from "./routes/userRoutes.js";
 
 // Redirect base request to /user
 app.get("/", async (req, res) => {
