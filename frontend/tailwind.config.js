@@ -1,9 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./*.html"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+// import flowbitePlugin from "flowbite/plugin";
 
+/** @type {import('tailwindcss').Config} */
+const config = {
+  content: ["./views/**/*.hbs"],
+  theme: {
+    extend: {
+      colors: {
+        "color-1": "#003566",
+      },
+    },
+  },
+};
+
+export default config;

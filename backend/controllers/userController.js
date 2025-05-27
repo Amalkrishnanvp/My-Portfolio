@@ -4,7 +4,7 @@ const userController = {
     try {
       res.render("user/home");
     } catch (error) {
-      console.error("Error rendering homepage:", err);
+      console.error("Error rendering homepage:", error);
       return res.status(500).send("Internal Server Error");
     }
   },

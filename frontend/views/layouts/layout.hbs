@@ -24,11 +24,15 @@
 
 <body>
 
+    {{> header}}
     {{{body}}}
-    
+    {{> footer}}
+
     <!-- Website scripts  -->
-    <script src="/javascripts/app.js">
-    </script>
+    <script src="/javascripts/app.js"></script>
+    {{!--
+    <script src="frontend/node_modules/flowbite/dist/flowbite.js"></script> --}}
+
 </body>
 
 </html>
