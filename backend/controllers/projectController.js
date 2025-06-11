@@ -8,6 +8,15 @@ const projectController = {
       return res.status(500).send("Internal Server Error");
     }
   },
+
+  async getMovieSearchDetails(req, res) {
+    try {
+      res.render("user/movieSearch");
+    } catch (error) {
+      console.error("Error getting movie search project details:", error);
+      return res.status(500).send("Internal Server Error");
+    }
+  },
 };
 
 export default projectController;

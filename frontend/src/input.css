@@ -6,19 +6,13 @@
   font-family: "Noto serif";
   font-size: 1rem;
 }
-.nav-border:hover {
-  border: 1px solid #fff;
-  border-radius: 2px;
-}
+
 .toggle-button-container {
   padding: 8px 12px;
   border-radius: 50%;
 }
 .toggle-list {
   display: flex;
-}
-.pad-5 {
-  padding: 5px;
 }
 nav {
   background-color: #001d3d;
