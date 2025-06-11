@@ -1,10 +1,11 @@
 {
   "name": "portfolio-backend",
   "version": "1.0.0",
+  "_comment": "nodemon server.js --watch server.js --watch ../frontend/views --watch ../frontend/public --watch . --ext js,hbs,css,json",
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js --watch server.js --watch ../frontend/views --watch ../frontend/public --watch . --ext js,hbs,css,json"
+    "start:": "node server.js"
   },
   "dependencies": {
     "express": "^5.1.0",
