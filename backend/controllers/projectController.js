@@ -17,6 +17,15 @@ const projectController = {
       return res.status(500).send("Internal Server Error");
     }
   },
+
+  async getMdplannerDetails(req, res) {
+    try {
+      res.render("user/mdPlanner");
+    } catch (error) {
+      console.error("Error getting movie search project details:", error);
+      return res.status(500).send("Internal Server Error");
+    }
+  },
 };
 
 export default projectController;

@@ -6,5 +6,7 @@ import projectController from "../controllers/projectController.js";
 router.get("/ecommerce", projectController.getEcommerceDetails);
 /* GET - Movie search */
 router.get("/movie-search", projectController.getMovieSearchDetails);
+/* GET - Mdplanner */
+router.get("/mdPlanner", projectController.getMdplannerDetails);
 
 export default router;

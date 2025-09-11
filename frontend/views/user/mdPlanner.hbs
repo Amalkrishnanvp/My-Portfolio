@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Meal and Diet Planning System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'color-1': '#111827',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .project-view {
+            display: inline-flex;
+            align-items: center;
+            color: #93c5fd;
+            transition: color 0.3s ease;
+        }
+
+        .project-view:hover {
+            color: #3b82f6;
+        }
+
+        .feature-icon {
+            color: #10b981;
+        }
+
+        .tech-tag {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+
+        .sticky-sidebar {
+            position: sticky;
+            top: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-color-1 min-h-screen">
+    <section class="bg-color-1">
+        <!-- Header Section -->
+        <header class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="/#my-projects" class="project-view transition">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Projects
+                </a>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">AI & Web
+                    Development</span>
+            </div>
+            <h1 class="text-4xl font-bold mt-6 text-gray-300">AI-Based Meal and Diet Planning System</h1>
+            <p class="text-xl text-slate-300 mt-2">An intelligent nutrition platform with personalized meal
+                recommendations and progress tracking</p>
+        </header>
+
+        <!-- Project Cover Image -->
+        <section class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-12">
+            <div class="rounded-xl shadow-lg overflow-hidden">
+                <img src="https://placehold.co/1200x600/1f2937/10b981/png?text=AI+Meal+Planner+Dashboard"
+                    alt="AI-Based Meal and Diet Planning System" class="w-full h-auto object-cover">
+            </div>
+        </section>
+
+        <!-- Project Details Section -->
+        <main class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid md:grid-cols-3 gap-12 py-8">
+            <!-- Main Content -->
+            <div class="md:col-span-2">
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-300">Project Overview</h2>
+                    <p class="mb-4 text-slate-300 leading-relaxed">
+                        This AI-powered meal and diet planning system was developed to provide personalized nutrition
+                        recommendations
+                        based on user profiles, goals, and preferences. The platform uses intelligent algorithms to
+                        calculate optimal
+                        calorie and nutrient requirements, track progress, and offer AI-generated meal suggestions.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        The system features a comprehensive admin dashboard for managing users, food database, and
+                        monitoring
+                        platform activity, making it a complete solution for nutrition management.
+                    </p>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-300">Key Features</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle feature-icon mt-1 mr-2"></i>
+                            <span class="text-slate-300">Smart nutrition calculation based on user profile and
+                                goals</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle feature-icon mt-1 mr-2"></i>
+                            <span class="text-slate-300">Daily progress tracking with visual indicators</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle feature-icon mt-1 mr-2"></i>
+                            <span class="text-slate-300">Date-based meal planning with interactive calendar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle feature-icon mt-1 mr-2"></i>
+                            <span class="text-slate-300">Comprehensive food database with quantity tracking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle feature-icon mt-1 mr-2"></i>
+                            <span class="text-slate-300">Weight and profile management with automatic
+                                recalculation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle feature-icon mt-1 mr-2"></i>
+                            <span class="text-slate-300">Meal reminders and skip alerts with configurable timing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle feature-icon mt-1 mr-2"></i>
+                            <span class="text-slate-300">AI mood-based food suggestions using Gemini AI
+                                integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle feature-icon mt-1 mr-2"></i>
+                            <span class="text-slate-300">Comprehensive admin dashboard with user insights and
+                                analytics</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-300">Technical Implementation</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-300">AI Integration</h3>
+                            <p class="text-slate-300 mt-1">
+                                Integrated Gemini AI API to provide mood-based food recommendations. The system analyzes
+                                user's
+                                mood input and suggests appropriate meals that align with both nutritional requirements
+                                and
+                                emotional needs.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-300">Real-time Calculations</h3>
+                            <p class="text-slate-300 mt-1">
+                                Implemented dynamic recalculation of nutritional needs when users update their weight or
+                                profile
+                                information, ensuring recommendations always match current requirements.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg text-gray-300">Responsive Dashboard</h3>
+                            <p class="text-slate-300 mt-1">
+                                Developed an interactive admin dashboard with data visualization for user analytics,
+                                food management,
+                                and system monitoring, providing administrators with comprehensive insights.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Image Gallery -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 text-gray-300">Screenshots</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/600x400/1f2937/10b981/png?text=User+Dashboard"
+                                alt="User Dashboard" class="w-full h-auto cursor-pointer hover:opacity-90 transition">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/600x400/1f2937/10b981/png?text=Meal+Planning"
+                                alt="Meal Planning Interface"
+                                class="w-full h-auto cursor-pointer hover:opacity-90 transition">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/600x400/1f2937/10b981/png?text=Progress+Tracking"
+                                alt="Progress Tracking"
+                                class="w-full h-auto cursor-pointer hover:opacity-90 transition">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/600x400/1f2937/10b981/png?text=Admin+Dashboard"
+                                alt="Admin Dashboard" class="w-full h-auto cursor-pointer hover:opacity-90 transition">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="md:col-span-1">
+                <div class="bg-white p-6 rounded-xl shadow-md sticky-sidebar">
+                    <h3 class="text-xl font-bold mb-4">Project Details</h3>
+
+                    <div class="space-y-5">
+                        <div>
+                            <h4 class="font-medium text-gray-500">Purpose</h4>
+                            <p>Learning & Portfolio</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium text-gray-500">Date</h4>
+                            <p>January 2024 - May 2024</p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-medium text-gray-500">Technologies</h4>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="tech-tag px-3 py-1 rounded-full text-sm">React.js</span>
+                                <span class="tech-tag px-3 py-1 rounded-full text-sm">Node.js</span>
+                                <span class="tech-tag px-3 py-1 rounded-full text-sm">Express.js</span>
+                                <span class="tech-tag px-3 py-1 rounded-full text-sm">MongoDB</span>
+                                <span class="tech-tag px-3 py-1 rounded-full text-sm">Gemini AI API</span>
+                                <span class="tech-tag px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                                <span class="tech-tag px-3 py-1 rounded-full text-sm">JWT Authentication</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 space-y-3">
+                            <a href="#"
+                                class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 px-4 rounded-lg font-medium transition">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                            </a>
+                            <a href="#"
+                                class="block w-full bg-gray-800 hover:bg-gray-900 text-white text-center py-3 px-4 rounded-lg font-medium transition">
+                                <i class="fab fa-github mr-2"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Optional JavaScript for image gallery -->
+    <script>
+        // Simple lightbox functionality
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('click', () => {
+                window.open(img.src, '_blank');
+            });
+        });
+    </script>
+</body>
+
+</html>
