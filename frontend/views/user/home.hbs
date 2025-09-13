@@ -37,18 +37,32 @@
                     <!-- more details in about section  -->
                     <div class="flex flex-col items-center justify-center pt-4 md:flex-row md:pt-6 md:justify-around">
                         <!-- my image in about section  -->
-                        <div class="profile-img md:shrink-0 md:mr-20">
+                        {{!-- <div class="profile-img md:shrink-0 md:mr-20">
                             <img src="images/imground3.jpg" class="rounded-full md:h-96 w-96">
-                        </div>
+                        </div> --}}
                         <!-- about section details  -->
-                        <div class="about max-w-2xl mt-8 md:mt-0">
+                        <div class="about max-w-2xl mt-8 md:mt-0 text-center">
                             <h3 class="text-3xl md:text-5xl mb-8">I am a <span id="identity"
                                     class="text-3xl md:text-5xl"></span><span id="cursor"
                                     class="text-3xl md:text-5xl d-inline-block">|</span></h3>
-                            <p class="md:text-lg">Welcome to my portfolio! I'm Amal, a Full Stack Developer skilled in
+                            {{!-- <p class="md:text-lg">Welcome to my portfolio! I'm Amal, a Full Stack Developer
+                                skilled in
                                 crafting end-to-end web solutions. From intuitive front-end interfaces to robust
                                 back-end systems, I build applications that are both visually appealing and functionally
-                                powerful.</p>
+                                powerful.</p> --}}
+                            <p class="md:text-lg">Welcome to my portfolio! I'm Amal, a passionate Full Stack Developer
+                                with a love for
+                                turning ideas into fully functional web applications. I specialize in building smooth,
+                                user-friendly frontends and robust, scalable backends that work seamlessly together.
+                                <br><br>
+                                I enjoy solving real-world problems through code, optimizing performance, and crafting
+                                clean, maintainable solutions. Whether it’s developing responsive websites, creating
+                                APIs, or integrating AI-powered features, I focus on delivering projects that are both
+                                visually appealing and technically strong.
+                                <br><br>
+                                Outside of coding, I’m constantly learning new tools, exploring modern technologies,
+                                and improving my skills to stay ahead in the ever-evolving tech world.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -66,46 +80,39 @@
                     </div>
                     <!-- my skills  -->
                     <div class="skill-icons pt-5 md:pt-7 flex justify-center">
+
                         <div class="box-row grid grid-cols-3 md:grid-cols-4 place-items-center gap-6">
                             <div
-                                class="box1 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/html.png">
-                            </div>
-                            <div
-                                class="box2 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/css.png">
-                            </div>
-                            <div
-                                class="box3 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/javascript.png">
-                            </div>
-                            <div
-                                class="box4 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/tailwind.svg">
-                            </div>
-                            <div
-                                class="box5 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/node.jpg">
+                                class="box8 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/m.png">
                             </div>
                             <div
                                 class="box6 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
                                 <img src="icons/express.png">
                             </div>
                             <div
-                                class="box7 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/handlebars.png">
+                                class="box13 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/react2.png">
                             </div>
                             <div
-                                class="box8 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/m.png">
+                                class="box5 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/node.jpg">
                             </div>
                             <div
-                                class="box9 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/s3.png">
+                                class="box4 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/tailwind.svg">
                             </div>
                             <div
-                                class="box10 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/java.png">
+                                class="box14 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/shadcn33.png">
+                            </div>
+                            <div
+                                class="box15 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/zustand33.webp">
+                            </div>
+                            <div
+                                class="box16 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/tanstack33.png">
                             </div>
                             <div
                                 class="box11 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
@@ -116,20 +123,29 @@
                                 <img src="icons/g.png">
                             </div>
                             <div
-                                class="box13 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/react1.png">
+                                class="box3 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/javascript.png">
                             </div>
                             <div
-                                class="box14 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/shadcn33.png">
+                                class="box7 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/handlebars.png">
+                            </div>
+
+                            <div
+                                class="box9 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/s3.png">
                             </div>
                             <div
-                                class="box15 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/zustand33.webp">
+                                class="box10 bg-white h-24 w-24 p-3 sm:h-28 sm:w-28 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/java.png">
                             </div>
-                             <div
-                                class="box16 bg-white h-28 w-28 p-3 sm:h-32 sm:w-32 sm:p-4 md:h-32 md:w-32 flex items-center justify-center rounded-xl shadow-property">
-                                <img src="icons/tanstack33.png">
+                            <div
+                                class="box1 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/html.png">
+                            </div>
+                            <div
+                                class="box2 bg-white h-24 w-24 p-4 sm:h-28 sm:w-28 sm:p-5 md:h-32 md:w-32 md:p-6 flex items-center justify-center rounded-xl shadow-property">
+                                <img src="icons/css.png">
                             </div>
                         </div>
 
